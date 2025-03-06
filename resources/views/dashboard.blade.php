@@ -1,17 +1,3 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+<x-layout>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quae natus? Repudiandae reiciendis maiores nihil quidem expedita magnam? Quidem, iure tempora. A tempora iure voluptatum recusandae doloremque veritatis! Repudiandae autem impedit nam omnis at distinctio a doloribus laboriosam esse aut voluptatem sit placeat et nihil rerum, perferendis totam incidunt laudantium! Dolor, et earum! Molestiae temporibus vel est repudiandae sed officiis vero molestias architecto sapiente aliquid quaerat libero sequi, praesentium illum unde natus incidunt mollitia velit reiciendis at earum voluptas ducimus dolore fugit. Impedit recusandae odio cum mollitia laborum, voluptatem, molestiae, numquam omnis labore necessitatibus nobis excepturi sunt doloremque repellat qui.</h1>
+</x-layout>
