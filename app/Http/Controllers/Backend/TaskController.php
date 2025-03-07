@@ -3,18 +3,23 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Team;
+use App\Models\Task;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class TaskController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $teams= Team::all();
-        return view('team.index', compact('teams'));
+        $tasks = Task::all()->map(function ($task) {
+            $task->days_remaining = Carbon::now()->diffInDays(Carbon::parse($task->deadline), false);
+            return $task;
+        });
+    
+        return view('task.index', compact('tasks'));
     }
 
     /**
